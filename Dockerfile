@@ -13,14 +13,15 @@ RUN apk update && \
 RUN mkdir /go_app
 # We copy everything in the root directory
 # into our /app directory
-COPY ./src /go_app
+COPY . /go_app
 # We specify that we now wish to execute 
 # any further commands inside our /app
 # directory
 WORKDIR /go_app
 # we run go build to compile the binary
 # executable of our Go program
-RUN go build -o main .
+# RUN go get ./...
+# RUN go build -o main .
 # Our start command which kicks off
 # our newly created binary executable
 # CMD ["go","/go_app/main"]
