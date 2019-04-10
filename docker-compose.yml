@@ -1,0 +1,14 @@
+version: '3.0'
+services:
+  golang:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: golang_api_umrohhaji
+    ports:
+      # <Port exposed> : < Port running inside container>
+      - 3001:3000
+    volumes:
+      - './src:/go_app:rw'
+      - './go-pckg:/go/src:rw'
+    tty: true
