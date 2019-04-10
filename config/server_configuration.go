@@ -1,10 +1,8 @@
 package config
 
 import (
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/lukmanlukmin/api_umroh_haji/middleware"
-	"os"
 )
 
 // default server router configuration
