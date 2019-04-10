@@ -9,6 +9,5 @@ services:
       # <Port exposed> : < Port running inside container>
       - 3001:3000
     volumes:
-      - './src:/go_app:rw'
-      - './go-pckg:/go/src:rw'
+      - './:/go_app:rw'
     tty: true
