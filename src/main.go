@@ -5,7 +5,7 @@ import (
     "log"
     "os"
     "github.com/joho/godotenv"
-    "github.com/lukmanlukmin/api_umroh_haji/config"
+    "github.com/lukmanlukmin/api_umroh_haji/src/config"
 )
 
 func init() {
