@@ -10,14 +10,14 @@ RUN apk update && \
 # We create an /app directory within our
 # image that will hold our application source
 # files
-RUN mkdir /go_app
+RUN mkdir /go/src/my_local_app
 # We copy everything in the root directory
 # into our /app directory
-COPY . /go_app
+COPY . /go/src/my_local_app
 # We specify that we now wish to execute 
 # any further commands inside our /app
 # directory
-WORKDIR /go_app
+WORKDIR /go/src/my_local_app
 # we run go build to compile the binary
 # executable of our Go program
 # RUN go get ./...
